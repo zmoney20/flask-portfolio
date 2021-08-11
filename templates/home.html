@@ -17,10 +17,20 @@
 		</div>
 
 		<!-- loop through project_data -->
-		{%for i in range(0, len)%}
-		<div>{{ project_data[i]['title'] }}</div>
-		{%endfor%}
-
+		<div class="project_container">
+			{%for i in range(0, len)%}
+			<div class="row">
+				<div class="column">
+					<a href="{{ project_data[i]['url'] }}" src="{{ project_data[i]['description'] }}"
+						><img
+							src="{{ url_for('static', filename='images/' + project_data[i]['image']) }}"
+						/>
+					</a>
+					<p class="project_title">{{ project_data[i]['title'] }}</p>
+				</div>
+			</div>
+			{%endfor%}
+		</div>
 		{% endblock %}
 	</body>
 </html>

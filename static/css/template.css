@@ -34,8 +34,6 @@ body {
 
 footer {
 	background-color: #282828;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -72,4 +70,8 @@ footer a {
 		display: block;
 		text-align: left;
 	}
+}
+
+h3 {
+    padding-left: .5em;
 }

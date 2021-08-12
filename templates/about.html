@@ -2,17 +2,37 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/about.css') }}"
+        />
 	</head>
 	<body>
 		{% extends "template.html" %} {% block content %}
-
-		<h1>About Flask</h1>
-		<p>Flask is a micro web framework written in Python.</p>
+        <div class="top_container">
+		    <h1>About Me</h1>
+            <img src="{{ url_for('static', filename='images/profilepic.jpg') }}" class="profile_pic"/>
+        </br>
 		<p>
-			Applications that use the Flask framework include Pinterest, LinkedIn, and
-			the community web page for Flask itself.
+            I'm a Web Developer that loves to challenge myself to learn new technologies. I also love to play video games, guitar,
+            and I enjoy researching mindfulness meditation.
 		</p>
-
+        </div>
+        </br>
+        </br>
+        <h3>Check out my dope skills</h3>
+        <div class="skills_container">
+            {% for i in skills %}
+            <div class="row">
+                <div class="column">
+            <img
+                class="skills"
+                src="{{ url_for('static', filename='skills/'  + i + '.png') }}"
+            />
+                </div>
+             </div>
+            {% endfor %}
+        </div>    
 		{% endblock %}
 	</body>
 </html>

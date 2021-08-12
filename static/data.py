@@ -30,3 +30,53 @@ project_data = [
     "url": "https://github.com/zmoney20/Fall_game"
     }
 ]
+
+education_data = [
+	{
+		"school": "Utah State University",
+		"degree": "Management Information Systems",
+		"graduated": "December 2022",
+		"description": "Can analyze and understand data using SQL efficiently, and have sufficient understanding of the complex business world."
+	},
+	{
+		"school": "Treehouse",
+		"degree": "Python Web Development",
+		"graduated": "July 2020",
+		"description": "Certified in Python, HTML, CSS, and Flask."
+	}
+]
+
+work_data = [
+    {
+		"company": "Overstock",
+		"title": "Web Development Intern",
+		"years": "May 2021 - August 2021",
+		"description": "Built an extensive backend API in Node.js. Used Liquibase and PostgreSQL to manage database schema changes, and used Vault to connect to the database via environment variables. Front end applciation was built using Next.js, React, and Less CSS. Gained a deep understanding of pipeline applications."
+	},
+	{
+		"company": "Deloitte",
+		"title": "Tax Delivery Consultant Intern",
+		"years": "January 2021 - April 2021",
+		"description": "600+ hours of reviewing tax returns for Japanese Clients and translating Japanese documents."
+	},
+	{
+		"company": "RIVN Co.",
+		"title": "Research Intern",
+		"years": "July 2020 - December 2020",
+		"description": "Researched methods for understanding the value of intellectual property and other intangible assets. Had fun learning about the controversy of the legitimacy and applicableness of patenting code and other technologies."
+	}
+]
+skills = [
+    'js',
+    'html',
+    'css',
+    'nodejs',
+    'react',
+    'sql',
+    'python',
+    'flask',
+    'docker',
+    'jenkins',
+    'vim',
+    'vault'
+        ]

@@ -16,9 +16,36 @@
 			<h2>Web Developer</h2>
 		</div>
 
+        <!-- loop through work_data -->
+        <h3>Work Experience</h3>
+        <div class="work_container">
+            {%for i in range(0, len_work)%}
+            <h4 class="company">{{ work_data[i]['company'] }}</h4>
+            <h5>{{ work_data[i]['title'] }}</h5>
+            <p>{{ work_data[i]['years'] }}</p>
+            <p>{{ work_data[i]['description'] }}</p>
+            </br>
+            {% endfor %}
+        </div>
+        </br>
+        </br>
+		<!-- loop through education_data -->
+        <h3>Education</h3>
+        <div class="education_container">
+            {%for i in range(0, len_education)%}
+            <h4 class="school">{{ education_data[i]['school'] }}</h4>
+            <h5>{{ education_data[i]['degree'] }}</h5>
+            <p>{{ education_data[i]['graduated'] }}</p>
+            <p>{{ education_data[i]['description'] }}</p>
+            </br>
+            {% endfor %}
+        </div>
+        </br>
+        </br>
 		<!-- loop through project_data -->
+        <h3>Fun Projects</h3>
 		<div class="project_container">
-			{%for i in range(0, len)%}
+			{%for i in range(0, len_project)%}
 			<div class="row">
 				<div class="column">
 					<a href="{{ project_data[i]['url'] }}" src="{{ project_data[i]['description'] }}"
@@ -31,6 +58,7 @@
 			</div>
 			{%endfor%}
 		</div>
+
 		{% endblock %}
 	</body>
 </html>

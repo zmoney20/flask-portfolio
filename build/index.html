@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="/static/css/home.css"
+		/>
+	</head>
+	<body>
+		<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Zach Anderson Portfolio</title>
+        <link
+            rel="icon"
+            href="/static/favicon.ico"
+        />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/static/css/template.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="topnav" id="myTopnav">
+				<a href="/">Home</a>
+				<a href="/about">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="header()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			<script>
+				const header = () => {
+					let x = document.getElementById('myTopnav');
+					if (x.className === 'topnav') {
+						x.className += ' responsive';
+					} else {
+						x.className = 'topnav';
+					}
+				};
+			</script>
+		</header>
+
+		
+		<div class="top_container">
+			<h1>Zach Anderson</h1>
+			<h2>Web Developer</h2>
+		</div>
+
+        <!-- loop through work_data -->
+        <h3>Work Experience</h3>
+        <div class="work_container">
+            
+            <h4 class="company">Overstock</h4>
+            <h5>Web Development Intern</h5>
+            <p>May 2021 - August 2021</p>
+            <p>Built an extensive backend API in Node.js. Used Liquibase and PostgreSQL to manage database schema changes, and used Vault to connect to the database via environment variables. Front end applciation was built using Next.js, React, and Less CSS. Gained a deep understanding of pipeline applications.</p>
+            </br>
+            
+            <h4 class="company">Deloitte</h4>
+            <h5>Tax Delivery Consultant Intern</h5>
+            <p>January 2021 - April 2021</p>
+            <p>600+ hours of reviewing tax returns for Japanese Clients and translating Japanese documents.</p>
+            </br>
+            
+            <h4 class="company">RIVN Co.</h4>
+            <h5>Research Intern</h5>
+            <p>July 2020 - December 2020</p>
+            <p>Researched methods for understanding the value of intellectual property and other intangible assets. Had fun learning about the controversy of the legitimacy and applicableness of patenting code and other technologies.</p>
+            </br>
+            
+        </div>
+        </br>
+        </br>
+		<!-- loop through education_data -->
+        <h3>Education</h3>
+        <div class="education_container">
+            
+            <h4 class="school">Utah State University</h4>
+            <h5>Management Information Systems</h5>
+            <p>December 2022</p>
+            <p>Can analyze and understand data using SQL efficiently, and have sufficient understanding of the complex business world.</p>
+            </br>
+            
+            <h4 class="school">Treehouse</h4>
+            <h5>Python Web Development</h5>
+            <p>July 2020</p>
+            <p>Certified in Python, HTML, CSS, and Flask.</p>
+            </br>
+            
+        </div>
+        </br>
+        </br>
+		<!-- loop through project_data -->
+        <h3>Fun Projects</h3>
+		<div class="project_container">
+			
+			<div class="row">
+				<div class="column">
+					<a href="https://zach-anderson-react.netlify.app" src="Web Portfolio made with React"
+						><img
+							src="/static/images/react-portfolio.png"
+						/>
+					</a>
+					<p class="project_title">React Portfolio</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/zmoney20/photowall" src="Photowall Web app using React and Redux"
+						><img
+							src="/static/images/photowall.png"
+						/>
+					</a>
+					<p class="project_title">React PhotoWall Web App</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/zmoney20/sample-project" src="Sample profile website made with Node.js"
+						><img
+							src="/static/images/nodejsproject.png"
+						/>
+					</a>
+					<p class="project_title">Node.js Sample Profile Wesbite</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/zmoney20/space-invaders" src="Pew pew the alien invaders!"
+						><img
+							src="/static/images/space-invaders.png"
+						/>
+					</a>
+					<p class="project_title">Space Invaders</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/zmoney20/Fall_game" src="Play as an 8-bit character sliding and falling into the abyss."
+						><img
+							src="/static/images/fall-game.png"
+						/>
+					</a>
+					<p class="project_title">Fall Game</p>
+				</div>
+			</div>
+			
+		</div>
+
+		
+		<footer>
+			<!-- Linkedin -->
+			<a href="https://www.linkedin.com/in/zachanderson20/" src="LinkedIn"
+				><i class="fab fa-linkedin-in"></i
+			></a>
+
+			<!-- Github -->
+			<a href="https://github.com/zmoney20" src="Github"
+				><i class="fab fa-github"></i
+			></a>
+		</footer>
+	</body>
+</html>

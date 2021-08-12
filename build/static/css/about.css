@@ -1,0 +1,34 @@
+img {
+    max-width: 300px;
+}
+
+.top_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills_container {
+    background-color: #404040;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.skills_container .row {
+    flex-direction: row;
+}
+
+.skills_container .column {
+    flex-direction: column;
+}
+
+.skills_container .row .column {
+    margin: 1em;
+    max-width: 150px;
+    text-align: center;
+    
+}
+.skills {
+    max-width: 60px;
+}

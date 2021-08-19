@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8" />
-		<title>Zach Anderson Portfolio</title>
-        <link
-            rel="icon"
-            href="{{ url_for('static', filename='favicon.ico') }}"
-        />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="{{ url_for('static', filename='css/template.css') }}"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-		/>
-	</head>
-	<body>
-		<header>
-			<div class="topnav" id="myTopnav">
-				<a href="{{ url_for('home') }}">Home</a>
-				<a href="{{ url_for('about') }}">About</a>
-				<a href="javascript:void(0);" class="icon" onclick="header()">
-					<i class="fa fa-bars"></i>
-				</a>
-			</div>
-			<script>
-				const header = () => {
-					let x = document.getElementById('myTopnav');
-					if (x.className === 'topnav') {
-						x.className += ' responsive';
-					} else {
-						x.className = 'topnav';
-					}
-				};
-			</script>
-		</header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Zach Anderson Portfolio</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/template.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="header()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        const header = () => {
+          let x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        };
+      </script>
+    </header>
 
-		{% block content %} {% endblock %}
-		<footer>
-			<!-- Linkedin -->
-			<a href="https://www.linkedin.com/in/zachanderson20/" src="LinkedIn"
-				><i class="fab fa-linkedin-in"></i
-			></a>
+    {% block content %} {% endblock %}
+    <footer>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/zachanderson20/" src="LinkedIn"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
 
-			<!-- Github -->
-			<a href="https://github.com/zmoney20" src="Github"
-				><i class="fab fa-github"></i
-			></a>
-		</footer>
-	</body>
+      <!-- Github -->
+      <a href="https://github.com/zmoney20" src="Github"
+        ><i class="fab fa-github"></i
+      ></a>
+    </footer>
+  </body>
 </html>

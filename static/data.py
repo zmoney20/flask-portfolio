@@ -1,5 +1,11 @@
 project_data = [
     {
+        "title": "Gaming Blog",
+        "image": "gaming-blog.png",
+        "description": "Gaming Blog made with Next.js, React, and Typescript",
+        "url": "https://zach-anderson-gaming-blog.netlify.app"
+    },
+    {
         "title": "React Portfolio",
         "image": "react-portfolio.png",
         "description": "Web Portfolio made with React",
